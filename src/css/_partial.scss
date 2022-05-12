@@ -1,0 +1,41 @@
+@mixin titre {
+    margin-left: auto;
+    margin-right: auto;
+    width:445px;
+    height:98px;
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.285714px;
+    color: #24303E;
+}
+@mixin texte{
+    margin-left: auto;
+    margin-right: auto;
+    width: 445px;
+    height: 90px;
+    left: 165px;
+    top: 1088px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.128571px;
+    color: #808397;
+}
+@mixin learn{
+    margin-left: auto;
+    margin-right: auto;
+    width:445px;
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color:#24303E;
+}

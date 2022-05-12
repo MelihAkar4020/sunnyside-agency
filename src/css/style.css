@@ -56,26 +56,63 @@ header {
 
 .principal {
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "text1 text1 img img" "img2 img2 text2 text2" "img3 img3 img4 img4" "Nom Nom Nom Nom" "img5 img6 img7 img8";
   background-color: rgba(128, 128, 128, 0.6);
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .text1 {
   grid-area: text1;
   background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
 }
-.text1.titre1 {
+.text1 .titre1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 445px;
+  height: 98px;
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.285714px;
   color: #24303E;
-  align-self: center;
+}
+.text1 .texte1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 445px;
+  height: 90px;
+  left: 165px;
+  top: 1088px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.128571px;
+  color: #808397;
+}
+.text1 .learn1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 445px;
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24303E;
 }
 
 .img {
@@ -93,15 +130,56 @@ header {
   background-color: aquamarine;
   height: auto;
   background-image: url("/image/verre-rose.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .text2 {
   grid-area: text2;
-  background-color: bisque;
-  height: auto;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+.text2 .titre2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 445px;
+  height: 98px;
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.285714px;
+  color: #24303E;
+}
+.text2 .texte2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 445px;
+  height: 90px;
+  left: 165px;
+  top: 1088px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.128571px;
+  color: #808397;
+}
+.text2 .learn2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 445px;
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24303E;
 }
 
 .img3 {
@@ -170,12 +248,8 @@ header {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .foot {
