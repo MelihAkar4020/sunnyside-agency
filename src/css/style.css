@@ -28,6 +28,13 @@ header {
           justify-content: space-between;
 }
 
+.entreprise {
+  background-image: url("/image/sunnyside.png");  
+  opacity: 0 ;
+  width: 170px; 
+  height: 33px;
+}
+
 .parametre {
   display: -webkit-box;
   display: -ms-flexbox;
