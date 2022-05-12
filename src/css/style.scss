@@ -1,15 +1,34 @@
 body {
     background-color: coral;
+    margin: auto;
 }
-
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .header {
     background-color: aqua;
-    width: 250px;
+    height: 800px;
+    width:1440px;
+}
+
+.menu{
+
+
+}
+.parametre{
+  list-style-type: none;
+  display: flex;
+  gap:15px;
+  justify-content: end;
+
 }
 
 .principal {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    grid-template-columns: repeat(4,360px);
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
    grid-auto-flow: row;
@@ -19,26 +38,27 @@ body {
       "img3 img3 img4 img4"
       "Nom Nom Nom Nom"
       "img5 img6 img7 img8";
-      background-color: grey;
+      background-color: rgb(128, 128, 128, 0.6);
 
 }
 
 .text1 {
     grid-area: text1;
     background-color: gold;
-    height: 250px;
+    height: 600px;
+    align-self: center;
    }  
 
   .img { 
       grid-area: img; 
-      background-color: aqua;
+      background-color: rgba(29, 226, 23, 0.582);
       height: 600px;
     }
     
     .text2 {
         grid-area: text2;
         background-color: bisque;
-        height: 250px;
+        height: 600px;
       }
 
   .img2 { 
@@ -51,43 +71,42 @@ body {
   .img3 {
        grid-area: img3; 
        background-color: green;
-       height: 250px;
+       height: 600px;
     }
   
   .img4 {
        grid-area: img4;
        background-color:violet ;
-       height: 250px;
+       height: 600px;
      }
   
   .Nom { 
       grid-area: nom;
       background-color: firebrick;
-      height: 250px;
     }
  
     .img5 {
         grid-area: img5; 
         background-color: mediumorchid;
-        height: 250px;
+        height: 447px;
      }
 
   .img6 {
        grid-area: img6; 
        background-color: darkkhaki;
-       height: 250px;
+       height: 447px;
     }
   
   .img7 {
        grid-area: img7; 
        background-color: lightcoral;
-       height: 250px;
+       height: 447px;
     }
   
   .img8 {
        grid-area: img8;
        background-color: royalblue;
-       height: 250px;
+       height: 447px;
      }
   
 
