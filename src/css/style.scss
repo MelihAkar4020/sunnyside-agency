@@ -1,27 +1,30 @@
 body {
     background-color: coral;
     margin: auto;
+    
+    
 }
 header{
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 .header {
     background-color: aqua;
+    position:absolute;
     height: 800px;
     width:1440px;
 }
-
 .menu{
-
-
-}
-.parametre{
-  list-style-type: none;
   display: flex;
-  gap:15px;
-  justify-content: end;
+  justify-content: space-between;
+}
+
+.parametre{
+  display: flex;
+  gap:16px;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding-right: 16px;
 
 }
 

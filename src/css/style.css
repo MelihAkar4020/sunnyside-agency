@@ -4,40 +4,33 @@ body {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .header {
   background-color: aqua;
+  position: absolute;
   height: 800px;
   width: 1440px;
 }
 
-.parametre {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.menu {
   display: flex;
-  gap: 15px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: space-between;
+}
+
+.parametre {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding-right: 16px;
 }
 
 .principal {
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   grid-template-columns: repeat(4, 360px);
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
