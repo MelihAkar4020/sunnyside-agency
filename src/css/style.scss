@@ -29,6 +29,25 @@ header{
 
 }
 
+.titre{
+    position: absolute;
+    width: 750px;
+    height: 69px;
+    left: 344.5px;
+    top: 195px;
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 69px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 8.75px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
 .principal {
     display: grid;
     justify-content: center;
