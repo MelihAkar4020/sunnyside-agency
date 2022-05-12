@@ -51,6 +51,7 @@ header{
 .principal {
     display: grid;
     justify-content: center;
+    grid-template-columns: repeat(4,360px);
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
    grid-auto-flow: row;
