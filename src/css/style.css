@@ -4,12 +4,8 @@ body {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .header {
@@ -21,23 +17,15 @@ header {
 }
 
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 0 25px;
 }
 
 .parametre {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 16px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   list-style-type: none;
   padding-right: 16px;
 }
@@ -62,22 +50,17 @@ header {
 }
 
 .principal {
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  grid-template-columns: repeat(4, 360px);
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "text1 text1 img img" "img2 img2 text2 text2" "img3 img3 img4 img4" "Nom Nom Nom Nom" "img5 img6 img7 img8";
   background-color: rgba(128, 128, 128, 0.6);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .text1 {
   grid-area: text1;
-  background-color: gold;
-  height: 600px;
+  background-color: #FFFFFF;
+}
+.text1.titre1 {
+  color: #24303E;
   align-self: center;
 }
 
@@ -86,6 +69,7 @@ header {
   background-color: rgba(29, 226, 23, 0.582);
   height: 600px;
   background-image: url("/image/oeuf.png");
+  background-repeat: no-repeat;
 }
 
 .img2 {
@@ -93,6 +77,7 @@ header {
   background-color: aquamarine;
   height: 600px;
   background-image: url("/image/verre-rose.png");
+  background-repeat: no-repeat;
 }
 
 .text2 {
@@ -106,6 +91,7 @@ header {
   background-color: green;
   height: 600px;
   background-image: url("/image/cerise.png");
+  background-repeat: no-repeat;
 }
 
 .img4 {
@@ -113,6 +99,7 @@ header {
   background-color: violet;
   height: 600px;
   background-image: url("/image/mandarine.png");
+  background-repeat: no-repeat;
 }
 
 .Nom {
@@ -125,6 +112,7 @@ header {
   background-color: mediumorchid;
   height: 447px;
   background-image: url("/image/bouteille.png");
+  background-repeat: no-repeat;
 }
 
 .img6 {
@@ -132,6 +120,7 @@ header {
   background-color: darkkhaki;
   height: 447px;
   background-image: url("/image/orange.png");
+  background-repeat: no-repeat;
 }
 
 .img7 {
@@ -139,6 +128,7 @@ header {
   background-color: lightcoral;
   height: 447px;
   background-image: url("/image/cornet.png");
+  background-repeat: no-repeat;
 }
 
 .img8 {
@@ -146,4 +136,5 @@ header {
   background-color: royalblue;
   height: 447px;
   background-image: url("/image/sucre.png");
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */

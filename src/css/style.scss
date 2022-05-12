@@ -70,9 +70,8 @@ header{
 
 .text1 {
   grid-area: text1;
-  background-color: gold;
-  height: 600px;
-  align-self: center;
+  background-color: #FFFFFF;
+  }
 }
 
 .img {
@@ -80,6 +79,7 @@ header{
   background-color: rgba(29, 226, 23, 0.582);
   height: 600px;
   background-image: url("/image/oeuf.png");
+  background-repeat: no-repeat;
 
 }
 
@@ -90,6 +90,7 @@ header{
   background-color: aquamarine;
   height: 600px;
   background-image: url("/image/verre-rose.png");
+  background-repeat: no-repeat;
 }
 
 .text2 {
@@ -103,6 +104,7 @@ header{
   background-color: green;
   height: 600px;
   background-image: url("/image/cerise.png");
+  background-repeat: no-repeat;
 }
 
 .img4 {
@@ -110,6 +112,7 @@ header{
   background-color: violet;
   height: 600px;
   background-image: url("/image/mandarine.png");
+  background-repeat: no-repeat;
 }
 
 .Nom {
@@ -122,6 +125,7 @@ header{
   background-color: mediumorchid;
   height: 447px;
   background-image: url("/image/bouteille.png");
+  background-repeat: no-repeat;
 }
 
 .img6 {
@@ -129,6 +133,7 @@ header{
   background-color: darkkhaki;
   height: 447px;
   background-image: url("/image/orange.png");
+  br
 }
 
 .img7 {
