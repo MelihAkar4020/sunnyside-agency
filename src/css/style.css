@@ -1,6 +1,7 @@
 body {
-  background-color: coral;
+  background-color: rgb(52, 177, 73);
   margin: 0;
+  width: auto;
 }
 
 header {
@@ -11,9 +12,12 @@ header {
 .header {
   background-color: aqua;
   /*position:absolute;*/
-  width: 1440px;
+  width: 100vw;
   height: 800px;
   background-image: url("/image/header-orange.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .menu {
@@ -47,9 +51,19 @@ header {
   letter-spacing: 8.75px;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin: 150px;
 }
 
 .principal {
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "text1 text1 img img" "img2 img2 text2 text2" "img3 img3 img4 img4" "Nom Nom Nom Nom" "img5 img6 img7 img8";
   background-color: rgba(128, 128, 128, 0.6);
   display: flex;
   flex-wrap: wrap;
@@ -67,23 +81,27 @@ header {
 .img {
   grid-area: img;
   background-color: rgba(29, 226, 23, 0.582);
-  height: 600px;
+  height: auto;
   background-image: url("/image/oeuf.png");
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .img2 {
   grid-area: img2;
   background-color: aquamarine;
-  height: 600px;
+  height: auto;
   background-image: url("/image/verre-rose.png");
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .text2 {
   grid-area: text2;
   background-color: bisque;
-  height: 600px;
+  height: auto;
 }
 
 .img3 {
@@ -91,15 +109,19 @@ header {
   background-color: green;
   height: 600px;
   background-image: url("/image/cerise.png");
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .img4 {
   grid-area: img4;
   background-color: violet;
-  height: 600px;
+  height: auto;
   background-image: url("/image/mandarine.png");
+  background-position: top;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Nom {
@@ -110,31 +132,54 @@ header {
 .img5 {
   grid-area: img5;
   background-color: mediumorchid;
-  height: 447px;
+  height: auto;
   background-image: url("/image/bouteille.png");
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .img6 {
   grid-area: img6;
   background-color: darkkhaki;
-  height: 447px;
+  height: auto;
   background-image: url("/image/orange.png");
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .img7 {
   grid-area: img7;
   background-color: lightcoral;
-  height: 447px;
+  height: auto;
   background-image: url("/image/cornet.png");
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .img8 {
   grid-area: img8;
   background-color: royalblue;
-  height: 447px;
+  height: auto;
   background-image: url("/image/sucre.png");
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.foot {
+  width: 100vw;
+  height: 350px;
+  background-color: aqua;
 }/*# sourceMappingURL=style.css.map */
