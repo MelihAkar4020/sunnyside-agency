@@ -7,13 +7,14 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap:wrap;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header {
   background-color: aqua;
+  position: absolute;
   height: 800px;
   width: 1440px;
   background-image: url("/image/header-orange.png");
@@ -28,13 +29,6 @@ header {
           justify-content: space-between;
 }
 
-.entreprise {
-  background-image: url("/image/sunnyside.png");  
-  opacity: 0 ;
-  width: 170px; 
-  height: 33px;
-}
-
 .parametre {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,6 +39,15 @@ header {
           justify-content: flex-end;
   list-style-type: none;
   padding-right: 16px;
+}
+
+.entreprise {
+  background-image: url("/image/sunnyside.png");
+}
+
+.titre {
+  font-family: Fraunces 9pt Soft;
+  weight: 900;
 }
 
 .principal {
