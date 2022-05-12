@@ -27,6 +27,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 25px;
 }
 
 .parametre {
@@ -43,6 +44,9 @@ header {
 
 .entreprise {
   background-image: url("/image/sunnyside.png");
+  color: transparent;
+  width: 170px;
+  height: 33px;
 }
 
 .titre {
