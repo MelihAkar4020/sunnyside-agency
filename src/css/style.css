@@ -14,9 +14,9 @@ header {
 
 .header {
   background-color: aqua;
-  position: absolute;
-  height: 800px;
+  /*position:absolute;*/
   width: 1440px;
+  height: 800px;
   background-image: url("/image/header-orange.png");
 }
 
@@ -50,8 +50,15 @@ header {
 }
 
 .titre {
-  font-family: Fraunces 9pt Soft;
-  weight: 900;
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 69px;
+  text-align: center;
+  letter-spacing: 8.75px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .principal {
