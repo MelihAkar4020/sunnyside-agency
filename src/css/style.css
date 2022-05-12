@@ -1,12 +1,6 @@
 body {
   background-color: coral;
-  margin: auto;
-  width: 100vw;
-}
-
-header {
   display: flex;
-  justify-content: center;
 }
 
 .header {
