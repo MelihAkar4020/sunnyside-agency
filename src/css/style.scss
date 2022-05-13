@@ -1,14 +1,35 @@
+@import "./_mixing.scss" ;
+
+
+
 body {
     background-color: rgb(52, 177, 73);
     margin: 0;
     width: auto;
     
-    
 }
+
+a{
+  text-decoration: none;
+  
+
+  &:visited {
+    color: #ffffff;
+    font-weight: 900;
+  }
+}
+
+
+                  /*     HEADER     */
+
+
+
+
 header{
   display: flex;
   justify-content: center;
 }
+
 .header {
     background-color: aqua;
     /*position:absolute;*/
@@ -18,28 +39,70 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
- 
 }
+
 .menu{
   display: flex;
   justify-content: space-between;
   margin: 0 25px;
 }
 
-.parametre{
-  display: flex;
-  gap:16px;
-  justify-content: flex-end;
-  list-style-type: none;
-  padding-right: 16px;
 
-}
 
 .entreprise{
-  background-image: url("/image/sunnyside.png");
+  background-image: url("./image/sunnyside.png");
   color: transparent;
   width: 170px;
   height: 33px;
+
+
+}
+
+.parametre{
+  display: flex;
+  gap:90px;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding-right: 16px;
+  color: #fff;
+
+  .contact_link{
+    &:visited{
+      color:#000;
+    }
+  }
+
+
+}
+
+.menu-droite{
+
+  font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+letter-spacing: -0.128571px;
+padding: 10px;
+color: #FFFFFF;
+}
+
+.contact{
+
+font-family: 'Fraunces 9pt Soft';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 25px;
+letter-spacing: -0.107143px;
+text-transform: uppercase;
+color: #24303E;
+background-color: #FFFFFF;
+background: #FFFFFF;
+border-radius: 28px;
+padding: 10px;
+
+
 }
 
 .titre{
@@ -56,6 +119,10 @@ header{
   margin:150px;
   
 }
+
+                              /*         MAIN          */
+
+
 
 .principal {
     display: grid;
@@ -76,18 +143,14 @@ header{
 .text1 {
   grid-area: text1;
   background-color: gold;
-  height: 600px;
+  height: 919px;
   align-self: center;
 }
 
 .img {
   grid-area: img;
-  background-color: rgba(29, 226, 23, 0.582);
-  height: auto;
   background-image: url("/image/oeuf.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include set_image ;
 
 
 }
@@ -96,40 +159,32 @@ header{
 
 .img2 {
   grid-area: img2;
-  background-color: aquamarine;
-  height: auto;
   background-image: url("/image/verre-rose.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include set_image ;
+
+
 
 }
 
 .text2 {
   grid-area: text2;
   background-color: bisque;
-  height: auto;
 }
 
 .img3 {
   grid-area: img3;
-  background-color: green;
-  height: 600px;
   background-image: url("/image/cerise.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include set_image ;
+
+
 
 }
 
 .img4 {
   grid-area: img4;
-  background-color: violet;
-  height: auto;
   background-image: url("/image/mandarine.png");
-  background-position: top ;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include set_image ;
+
 
 }
 
@@ -140,48 +195,43 @@ header{
 
 .img5 {
   grid-area: img5;
-  background-color: mediumorchid;
-  height: auto;
   background-image: url("/image/bouteille.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include set_image ;
+
 
 }
 
 .img6 {
   grid-area: img6;
-  background-color: darkkhaki;
-  height: auto;
   background-image: url("/image/orange.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include set_image ;
 
 }
 
 .img7 {
   grid-area: img7;
-  background-color: lightcoral;
-  height: auto;
   background-image: url("/image/cornet.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include set_image ;
+
 
 }
 
 .img8 {
   grid-area: img8;
-  background-color: royalblue;
-  height: auto;
   background-image: url("/image/sucre.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include set_image ;
+
+ 
 
   
 }
+
+
+                      /*        FOOTER           */
+
+
+
+
 
 footer{
   display: flex;
@@ -190,6 +240,77 @@ footer{
 .foot {
   width: 100vw;
   height: 350px;
-  background-color: aqua;
+  background-color: #90D4C6;
+
+  .entreprise-name{
+    background-image: url("/image/sunny.svg");
+    color: transparent;
+    width: 170px;
+    height: 33px;
+    text-align: center;
+    margin: 80px auto 50px;
+
+  }
+
+  .menu-foot{
+    display: flex;
+    gap:60px;
+    justify-content: center;
+    list-style-type: none;
+    padding-right: 16px;
+    margin: 60px;
+  
+
+    .data-menu-foot{
+
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: -0.128571px;
+      padding: 10px;
+      color: #FFFFFF;
+      }
+      
+  }
+
+  .menu-foot-reseau{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    list-style-type: none;
+    padding-right: 16px;
+  
+    .reseau-fb{
+      background-image: url("/image/facebook.svg");
+      color: transparent;
+      width: 20px;
+      height: 20px;
+    }
+    .reseau-ig{
+      background-image: url("/image/instagram.svg");
+      color: transparent;
+      width: 20px;
+      height: 20px;
+    }
+    .reseau-t{
+      background-image: url("/image/twitter.svg");
+      color: transparent;
+      width: 20px;
+      height: 17px;
+    }
+    .reseau-pin{
+      background-image: url("/image/pinterest.svg");
+      color: transparent;
+      width: 20px;
+      height: 20px;
+    }
+
+
 }
+
+
+}
+
 

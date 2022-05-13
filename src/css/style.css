@@ -4,6 +4,15 @@ body {
   width: auto;
 }
 
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #ffffff;
+  font-weight: 900;
+}
+
+/*     HEADER     */
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,23 +43,53 @@ header {
   margin: 0 25px;
 }
 
+.entreprise {
+  background-image: url("./image/sunnyside.png");
+  color: transparent;
+  width: 170px;
+  height: 33px;
+}
+
 .parametre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 16px;
+  gap: 90px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   list-style-type: none;
   padding-right: 16px;
+  color: #fff;
+}
+.parametre .contact_link:visited {
+  color: #000;
 }
 
-.entreprise {
-  background-image: url("/image/sunnyside.png");
-  color: transparent;
-  width: 170px;
-  height: 33px;
+.menu-droite {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.128571px;
+  padding: 10px;
+  color: #FFFFFF;
+}
+
+.contact {
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.107143px;
+  text-transform: uppercase;
+  color: #24303E;
+  background-color: #FFFFFF;
+  background: #FFFFFF;
+  border-radius: 28px;
+  padding: 10px;
 }
 
 .titre {
@@ -66,6 +105,7 @@ header {
   margin: 150px;
 }
 
+/*         MAIN          */
 .principal {
   display: grid;
   -webkit-box-pack: center;
@@ -82,15 +122,15 @@ header {
 .text1 {
   grid-area: text1;
   background-color: gold;
-  height: 600px;
+  height: 919px;
   align-self: center;
 }
 
 .img {
   grid-area: img;
-  background-color: rgba(29, 226, 23, 0.582);
-  height: auto;
   background-image: url("/image/oeuf.png");
+  height: auto;
+  background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,9 +138,9 @@ header {
 
 .img2 {
   grid-area: img2;
-  background-color: aquamarine;
-  height: auto;
   background-image: url("/image/verre-rose.png");
+  height: auto;
+  background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -109,14 +149,13 @@ header {
 .text2 {
   grid-area: text2;
   background-color: bisque;
-  height: auto;
 }
 
 .img3 {
   grid-area: img3;
-  background-color: green;
-  height: 600px;
   background-image: url("/image/cerise.png");
+  height: auto;
+  background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,10 +163,10 @@ header {
 
 .img4 {
   grid-area: img4;
-  background-color: violet;
-  height: auto;
   background-image: url("/image/mandarine.png");
-  background-position: top;
+  height: auto;
+  background-color: aquamarine;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -139,9 +178,9 @@ header {
 
 .img5 {
   grid-area: img5;
-  background-color: mediumorchid;
-  height: auto;
   background-image: url("/image/bouteille.png");
+  height: auto;
+  background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,9 +188,9 @@ header {
 
 .img6 {
   grid-area: img6;
-  background-color: darkkhaki;
-  height: auto;
   background-image: url("/image/orange.png");
+  height: auto;
+  background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -159,9 +198,9 @@ header {
 
 .img7 {
   grid-area: img7;
-  background-color: lightcoral;
-  height: auto;
   background-image: url("/image/cornet.png");
+  height: auto;
+  background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -169,14 +208,15 @@ header {
 
 .img8 {
   grid-area: img8;
-  background-color: royalblue;
-  height: auto;
   background-image: url("/image/sucre.png");
+  height: auto;
+  background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/*        FOOTER           */
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,5 +229,70 @@ footer {
 .foot {
   width: 100vw;
   height: 350px;
-  background-color: aqua;
+  background-color: #90D4C6;
+}
+.foot .entreprise-name {
+  background-image: url("/image/sunny.svg");
+  color: transparent;
+  width: 170px;
+  height: 33px;
+  text-align: center;
+  margin: 80px auto 50px;
+}
+.foot .menu-foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  padding-right: 16px;
+  margin: 60px;
+}
+.foot .menu-foot .data-menu-foot {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.128571px;
+  padding: 10px;
+  color: #FFFFFF;
+}
+.foot .menu-foot-reseau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  padding-right: 16px;
+}
+.foot .menu-foot-reseau .reseau-fb {
+  background-image: url("/image/facebook.svg");
+  color: transparent;
+  width: 20px;
+  height: 20px;
+}
+.foot .menu-foot-reseau .reseau-ig {
+  background-image: url("/image/instagram.svg");
+  color: transparent;
+  width: 20px;
+  height: 20px;
+}
+.foot .menu-foot-reseau .reseau-t {
+  background-image: url("/image/twitter.svg");
+  color: transparent;
+  width: 20px;
+  height: 17px;
+}
+.foot .menu-foot-reseau .reseau-pin {
+  background-image: url("/image/pinterest.svg");
+  color: transparent;
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=style.css.map */
