@@ -113,7 +113,7 @@ header{
 }
 .titre{
 
-  font-family: 'Fraunces 9pt Soft';
+  font-family: 'Fraunces' ,serif;
   font-style: normal;
   font-weight: 900;
   font-size: 56px;
@@ -169,7 +169,6 @@ header{
   }
  
   .learn-more1{
-    @include learn;
     width:130px;
     text-shadow: 0px 7px 6px rgba(255, 253, 53, 0.90);
 

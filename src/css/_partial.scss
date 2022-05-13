@@ -3,7 +3,7 @@
     margin-right: auto;
     width:445px;
     height:98px;
-    font-family: 'Fraunces 9pt Soft';
+    font-family: 'Fraunces' , serif;
     font-style: normal;
     font-weight: 900;
     font-size: 40px;
@@ -31,7 +31,7 @@
     margin-left: auto;
     margin-right: auto;
     width:445px;
-    font-family: 'Fraunces 9pt Soft';
+    font-family: 'Fraunces' , serif;;
     font-style: normal;
     font-weight: 900;
     font-size: 15px;
@@ -56,7 +56,7 @@
     color: #19536C;
     }
 @mixin bgtitle {
-    font-family: 'Fraunces 9pt Soft';
+    font-family: 'Fraunces' , serif;;
     font-style: normal;
     font-weight: 900;
     font-size: 28px;
@@ -81,7 +81,7 @@
 }
 @mixin client {
     margin: 0;
-    font-family: 'Fraunces 9pt Soft';
+    font-family: 'Fraunces' , serif;;
     font-style: normal;
     font-weight: 900;
     font-size: 18px;
