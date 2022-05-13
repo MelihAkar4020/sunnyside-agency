@@ -14,12 +14,8 @@ a:visited {
 
 /*     HEADER     */
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .header {
@@ -34,12 +30,8 @@ header {
 }
 
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 0 25px;
 }
 
@@ -51,13 +43,9 @@ header {
 }
 
 .parametre {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 90px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   list-style-type: none;
   padding-right: 16px;
   color: #fff;
@@ -118,9 +106,7 @@ header {
 /*         MAIN          */
 .principal {
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
@@ -132,18 +118,10 @@ header {
 .text1 {
   grid-area: text1;
   background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   text-align: justify;
-  height: 800px;
 }
 .text1 .titre1 {
   margin-left: auto;
@@ -157,6 +135,7 @@ header {
   line-height: 49px;
   letter-spacing: -0.285714px;
   color: #24303E;
+  align-self: center;
 }
 .text1 .texte1 {
   margin-left: auto;
@@ -211,7 +190,7 @@ header {
 .img {
   grid-area: img;
   background-image: url("/image/oeuf.png");
-  height: auto;
+  height: 800px;
   background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
@@ -221,7 +200,7 @@ header {
 .img2 {
   grid-area: img2;
   background-image: url("/image/verre-rose.png");
-  height: auto;
+  height: 800px;
   background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
@@ -231,18 +210,10 @@ header {
 .text2 {
   grid-area: text2;
   background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   text-align: justify;
-  height: 800px;
 }
 .text2 .titre2 {
   margin-left: auto;
@@ -256,6 +227,7 @@ header {
   line-height: 49px;
   letter-spacing: -0.285714px;
   color: #24303E;
+  align-self: center;
 }
 .text2 .texte2 {
   margin-left: auto;
@@ -309,33 +281,239 @@ header {
 
 .img3 {
   grid-area: img3;
+}
+
+.text3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: justify;
   background-image: url("/image/cerise.png");
-  height: auto;
+  height: 800px;
   background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.text3 .texte3 {
+  padding-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 339px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  /* or 169% */
+  text-align: center;
+  letter-spacing: -0.114286px;
+  color: #19536C;
+}
+.text3 .titre3 {
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: -0.2px;
+  width: 221px;
 }
 
 .img4 {
   grid-area: img4;
+}
+
+.text4 {
   background-image: url("/image/mandarine.png");
-  height: auto;
+  height: 800px;
   background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: justify;
+}
+.text4 .texte4 {
+  padding-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 339px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  /* or 169% */
+  text-align: center;
+  letter-spacing: -0.114286px;
+  color: #19536C;
+}
+.text4 .titre4 {
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: -0.2px;
+  width: 191px;
+  mix-blend-mode: normal;
+  opacity: 0.75;
 }
 
-.Nom {
-  grid-area: nom;
-  background-color: firebrick;
+.testimonial {
+  grid-area: Nom;
+  background-color: #FFFFFF;
+}
+.testimonial .titreclient {
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 5px;
+  color: #A7AAAD;
+  padding-top: 160px;
+  padding-bottom: 81px;
+}
+.testimonial .client {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial .client img {
+  width: 72px;
+  height: 72px;
+}
+.testimonial .client.emily {
+  margin-top: 58px;
+  margin-bottom: 69px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #5B636D;
+  width: 350px;
+  padding-right: 30px;
+}
+.testimonial .client.emily .name {
+  margin: 0;
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #24303E;
+}
+.testimonial .client.emily.travail {
+  margin: 0;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  /* identical to box height, or 179% */
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #A7AAAD;
+}
+.testimonial .client.thomas {
+  margin-top: 58px;
+  margin-bottom: 69px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #5B636D;
+  width: 350px;
+}
+.testimonial .client.thomas .name {
+  margin: 0;
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #24303E;
+}
+.testimonial .client.thomas.travail {
+  margin: 0;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  /* identical to box height, or 179% */
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #A7AAAD;
+}
+.testimonial .client.jennie {
+  margin-top: 58px;
+  margin-bottom: 69px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #5B636D;
+  width: 350px;
+  padding-left: 30px;
+}
+.testimonial .client.jennie .name {
+  margin: 0;
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #24303E;
+}
+.testimonial .client.jennie.travail {
+  margin: 0;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  /* identical to box height, or 179% */
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #A7AAAD;
 }
 
 .img5 {
   grid-area: img5;
   background-image: url("/image/bouteille.png");
-  height: auto;
+  height: 800px;
   background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
@@ -345,7 +523,7 @@ header {
 .img6 {
   grid-area: img6;
   background-image: url("/image/orange.png");
-  height: auto;
+  height: 800px;
   background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
@@ -355,7 +533,7 @@ header {
 .img7 {
   grid-area: img7;
   background-image: url("/image/cornet.png");
-  height: auto;
+  height: 800px;
   background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
@@ -365,7 +543,7 @@ header {
 .img8 {
   grid-area: img8;
   background-image: url("/image/sucre.png");
-  height: auto;
+  height: 800px;
   background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
@@ -374,12 +552,8 @@ header {
 
 /*        FOOTER           */
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .foot {
@@ -396,13 +570,9 @@ footer {
   margin: 80px auto 50px;
 }
 .foot .menu-foot {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 60px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   list-style-type: none;
   padding-right: 16px;
   margin: 60px;
@@ -418,13 +588,9 @@ footer {
   color: #FFFFFF;
 }
 .foot .menu-foot-reseau {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   list-style-type: none;
   padding-right: 16px;
 }
