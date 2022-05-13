@@ -62,11 +62,7 @@ header {
   padding-right: 16px;
   color: #fff;
 }
-.parametre .contact_link:visited {
-  color: #000;
-}
-
-.menu-droite {
+.parametre .menu-droite {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 600;
@@ -76,8 +72,7 @@ header {
   padding: 10px;
   color: #FFFFFF;
 }
-
-.contact {
+.parametre .contact {
   font-family: "Fraunces 9pt Soft";
   font-style: normal;
   font-weight: 700;
@@ -86,8 +81,16 @@ header {
   letter-spacing: -0.107143px;
   text-transform: uppercase;
   color: #24303E;
-  background-color: #FFFFFF;
   background: #FFFFFF;
+  border-radius: 28px;
+  padding: 10px;
+}
+.parametre .contact .contact_link:visited {
+  color: #000;
+}
+.parametre .contact .contact_link:hover {
+  background-color: #78cef5;
+  color: #fff;
   border-radius: 28px;
   padding: 10px;
 }
@@ -183,6 +186,27 @@ header {
   text-transform: uppercase;
   color: #24303E;
 }
+.text1 .learn-more1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 445px;
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24303E;
+  width: 130px;
+  text-shadow: 0px 7px 6px rgba(255, 253, 53, 0.9);
+}
+.text1 .learn-more1:hover {
+  text-shadow: 0px 7px 6px #fad400;
+}
+.text1 .learn-more1:visited {
+  color: #000;
+}
 
 .img {
   grid-area: img;
@@ -260,6 +284,27 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #24303E;
+}
+.text2 .learn-more2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 445px;
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24303E;
+  width: 130px;
+  text-shadow: 0px 7px 6px #ffdbd4;
+}
+.text2 .learn-more2:hover {
+  text-shadow: 0px 7px 6px #fe7766;
+}
+.text2 .learn-more2:visited {
+  color: #000;
 }
 
 .img3 {
