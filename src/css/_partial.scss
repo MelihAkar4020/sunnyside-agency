@@ -10,6 +10,7 @@
     line-height: 49px;
     letter-spacing: -0.285714px;
     color: #24303E;
+    align-self: center;
 }
 @mixin texte{
     margin-left: auto;
@@ -38,4 +39,67 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color:#24303E;
+}
+@mixin bgtext {
+    padding-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width:339px ;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    /* or 169% */
+    text-align: center;
+    letter-spacing: -0.114286px;
+    color: #19536C;
+    }
+@mixin bgtitle {
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: -0.2px;
+    
+}
+@mixin avis {
+    margin-top:58px ;
+    margin-bottom:69px ;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+    text-align: center;
+    letter-spacing: -0.128571px;
+    color: #5B636D;
+}
+@mixin client {
+    margin: 0;
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.128571px;
+    color: #24303E;
+}
+
+@mixin travail {
+    margin:0;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    /* identical to box height, or 179% */
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #A7AAAD;
 }
