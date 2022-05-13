@@ -14,12 +14,8 @@ a:visited {
 
 /*     HEADER     */
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .header {
@@ -34,12 +30,8 @@ header {
 }
 
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 0 25px;
 }
 
@@ -51,13 +43,9 @@ header {
 }
 
 .parametre {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  gap: 90px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  gap: 16px;
+  justify-content: flex-end;
   list-style-type: none;
   padding-right: 16px;
   color: #fff;
@@ -108,9 +96,7 @@ header {
 /*         MAIN          */
 .principal {
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
@@ -121,9 +107,52 @@ header {
 
 .text1 {
   grid-area: text1;
-  background-color: gold;
-  height: 919px;
-  align-self: center;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+.text1 .titre1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 445px;
+  height: 98px;
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.285714px;
+  color: #24303E;
+}
+.text1 .texte1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 445px;
+  height: 90px;
+  left: 165px;
+  top: 1088px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.128571px;
+  color: #808397;
+}
+.text1 .learn1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 445px;
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24303E;
 }
 
 .img {
@@ -148,7 +177,52 @@ header {
 
 .text2 {
   grid-area: text2;
-  background-color: bisque;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+.text2 .titre2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 445px;
+  height: 98px;
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.285714px;
+  color: #24303E;
+}
+.text2 .texte2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 445px;
+  height: 90px;
+  left: 165px;
+  top: 1088px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.128571px;
+  color: #808397;
+}
+.text2 .learn2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 445px;
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24303E;
 }
 
 .img3 {
@@ -218,12 +292,8 @@ header {
 
 /*        FOOTER           */
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .foot {

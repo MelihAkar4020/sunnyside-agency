@@ -2,6 +2,7 @@
 
 
 
+@import '_partial.scss';
 body {
     background-color: rgb(52, 177, 73);
     margin: 0;
@@ -142,10 +143,21 @@ padding: 10px;
 
 .text1 {
   grid-area: text1;
-  background-color: gold;
-  height: 919px;
-  align-self: center;
-}
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  .titre1{
+    @include titre;
+  }
+  .texte1{
+    @include texte;
+  }
+  .learn1{
+   @include learn;
+  }
+  }
 
 .img {
   grid-area: img;
@@ -168,7 +180,20 @@ padding: 10px;
 
 .text2 {
   grid-area: text2;
-  background-color: bisque;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  .titre2{
+    @include titre;
+  }
+  .texte2{
+    @include texte;
+  }
+  .learn2{
+    @include learn;
+  }
 }
 
 .img3 {
