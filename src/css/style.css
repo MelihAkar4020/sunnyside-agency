@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(52, 177, 73);
+  background-color: rgb(255, 255, 255);
   margin: 0;
   width: auto;
 }
@@ -14,8 +14,12 @@ a:visited {
 
 /*     HEADER     */
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header {
@@ -30,22 +34,30 @@ header {
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 25px;
 }
 
 .entreprise {
-  background-image: url("./image/sunnyside.png");
+  background-image: url("/image/sunnyside.png");
   color: transparent;
   width: 170px;
   height: 33px;
 }
 
 .parametre {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  gap: 16px;
-  justify-content: flex-end;
+  gap: 90px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   list-style-type: none;
   padding-right: 16px;
   color: #fff;
@@ -96,7 +108,9 @@ header {
 /*         MAIN          */
 .principal {
   display: grid;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
@@ -108,10 +122,18 @@ header {
 .text1 {
   grid-area: text1;
   background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: justify;
+  height: 800px;
 }
 .text1 .titre1 {
   margin-left: auto;
@@ -178,10 +200,18 @@ header {
 .text2 {
   grid-area: text2;
   background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: justify;
+  height: 800px;
 }
 .text2 .titre2 {
   margin-left: auto;
@@ -292,8 +322,12 @@ header {
 
 /*        FOOTER           */
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .foot {
