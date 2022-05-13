@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 918px) {
     body{
         background-color: green;
     }
@@ -7,18 +7,27 @@
         display: none;
     }
 */
-    .principal{     
-    display:grid;
-    grid-template-columns: 1fr;
+.principal {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(10,1fr);
+    gap: 0px 0px;
+   grid-auto-flow: row;
+    grid-template-areas:
+      "text1 text1"
+       " img img"
+      "img2 img2"
+      " text2 text2"
+      "img3 img3"
+      " img4 img4"
+      "Nom Nom"
+      " Nom Nom"
+      "img5 img6"
+       "img7 img8";
+      background-color: rgb(128, 128, 128, 0.6);
+}
 
-    }
-    #{
-        grid-column: 1 / 4;
-
-    }
-    #{
-       grid-column: 1/4; 
-    }
 
 }
 
