@@ -344,7 +344,7 @@ header{
 
 .img5 {
   grid-area: img5;
-  background-image: url('../image/bouteille.png');
+  background-image: url('image/bouteille.png');
   @include set_image_xl;
 
 }
