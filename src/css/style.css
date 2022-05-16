@@ -1,3 +1,42 @@
+@media (max-width: 918px) {
+  body {
+    background-color: green;
+  }
+
+  .principal {
+    grid-template-columns: repeat(2, 0.5fr) !important;
+    grid-template-rows: repeat(6, 0.5fr) 0.5fr 0.5fr 455px 455px !important;
+    grid-template-areas: "text1 text1" "img1 img1" "img2 img2" "text2 text2" "img3 img3" "img4 img4" "Nom Nom" "Nom Nom" "img5 img6" "img7 img8" !important;
+  }
+
+  .text4 {
+    height: 1440px !important;
+    background-color: aquamarine;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .text3 {
+    height: 1440px !important;
+    background-color: aquamarine;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .galerie {
+    height: 457.5px !important;
+  }
+
+  .client {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    padding: 0px !important;
+  }
+}
 body {
   background-color: rgb(255, 255, 255);
   margin: 0;
@@ -122,10 +161,10 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 0.7fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "text1 text1 img img" "img2 img2 text2 text2" "img3 img3 img4 img4" "Nom Nom Nom Nom" "img5 img6 img7 img8";
+  grid-template-areas: "text1 text1 img1 img1" "img2 img2 text2 text2" "img3 img3 img4 img4" "Nom Nom Nom Nom" "img5 img6 img7 img8";
   background-color: rgba(128, 128, 128, 0.6);
 }
 
@@ -143,20 +182,21 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: justify;
-  height: 800px;
 }
 .text1 .titre1 {
   margin-left: auto;
   margin-right: auto;
   width: 445px;
   height: 98px;
-  font-family: "Fraunces 9pt Soft";
+  font-family: "Fraunces", serif;
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
   line-height: 49px;
   letter-spacing: -0.285714px;
   color: #24303E;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .text1 .texte1 {
   margin-left: auto;
@@ -177,7 +217,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   width: 445px;
-  font-family: "Fraunces 9pt Soft";
+  font-family: "Fraunces", serif;
   font-style: normal;
   font-weight: 900;
   font-size: 15px;
@@ -190,7 +230,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   width: 445px;
-  font-family: "Fraunces 9pt Soft";
+  font-family: "Fraunces", serif;
   font-style: normal;
   font-weight: 900;
   font-size: 15px;
@@ -208,8 +248,8 @@ header {
   color: #000;
 }
 
-.img {
-  grid-area: img;
+.img1 {
+  grid-area: img1;
   background-image: url("/image/oeuf.png");
   height: auto;
   background-color: aquamarine;
@@ -242,20 +282,21 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: justify;
-  height: 800px;
 }
 .text2 .titre2 {
   margin-left: auto;
   margin-right: auto;
   width: 445px;
   height: 98px;
-  font-family: "Fraunces 9pt Soft";
+  font-family: "Fraunces", serif;
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
   line-height: 49px;
   letter-spacing: -0.285714px;
   color: #24303E;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .text2 .texte2 {
   margin-left: auto;
@@ -276,7 +317,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   width: 445px;
-  font-family: "Fraunces 9pt Soft";
+  font-family: "Fraunces", serif;
   font-style: normal;
   font-weight: 900;
   font-size: 15px;
@@ -289,7 +330,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   width: 445px;
-  font-family: "Fraunces 9pt Soft";
+  font-family: "Fraunces", serif;
   font-style: normal;
   font-weight: 900;
   font-size: 15px;
@@ -309,27 +350,256 @@ header {
 
 .img3 {
   grid-area: img3;
+}
+
+.text3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
   background-image: url("/image/cerise.png");
-  height: auto;
+  height: 800px !important;
   background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.text3 .texte3 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 339px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  /* or 169% */
+  text-align: center;
+  letter-spacing: -0.114286px;
+  color: #19536C;
+}
+.text3 .titre3 {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: -0.2px;
+  width: 221px;
 }
 
 .img4 {
   grid-area: img4;
+}
+
+.text4 {
   background-image: url("/image/mandarine.png");
-  height: auto;
+  height: 800px !important;
   background-color: aquamarine;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+}
+.text4 .texte4 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 339px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  /* or 169% */
+  text-align: center;
+  letter-spacing: -0.114286px;
+  color: #19536C;
+}
+.text4 .titre4 {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: -0.2px;
+  width: 191px;
+  mix-blend-mode: normal;
+  opacity: 0.75;
 }
 
-.Nom {
-  grid-area: nom;
-  background-color: firebrick;
+.testimonial {
+  grid-area: Nom;
+  background-color: #FFFFFF;
+}
+.testimonial .titreclient {
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 5px;
+  color: #A7AAAD;
+  padding-top: 160px;
+  padding-bottom: 81px;
+}
+.testimonial .client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.testimonial .client img {
+  width: 72px;
+  height: 72px;
+}
+.testimonial .client .emily {
+  margin-top: 58px;
+  margin-bottom: 69px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #5B636D;
+  width: 350px;
+  padding-right: 30px;
+}
+.testimonial .client .emily .name {
+  margin: 0;
+  font-family: "Fraunces" serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #24303E;
+}
+.testimonial .client .emily .travail {
+  margin: 0;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  /* identical to box height, or 179% */
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #A7AAAD;
+}
+.testimonial .client .thomas {
+  margin-top: 58px;
+  margin-bottom: 69px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #5B636D;
+  width: 350px;
+}
+.testimonial .client .thomas .name {
+  margin: 0;
+  font-family: "Fraunces" serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #24303E;
+}
+.testimonial .client .thomas .travail {
+  margin: 0;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  /* identical to box height, or 179% */
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #A7AAAD;
+}
+.testimonial .client .jennie {
+  margin-top: 58px;
+  margin-bottom: 69px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #5B636D;
+  width: 350px;
+  padding-left: 30px;
+}
+.testimonial .client .jennie .name {
+  margin: 0;
+  font-family: "Fraunces" serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #24303E;
+}
+.testimonial .client .jennie .travail {
+  margin: 0;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  /* identical to box height, or 179% */
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #A7AAAD;
 }
 
 .img5 {
@@ -381,13 +651,12 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-.foot {
+footer .foot {
   width: 100vw;
   height: 350px;
-  background-color: #90D4C6;
+  background-color: #000000;
 }
-.foot .entreprise-name {
+footer .foot .entreprise-name {
   background-image: url("/image/sunny.svg");
   color: transparent;
   width: 170px;
@@ -395,7 +664,7 @@ footer {
   text-align: center;
   margin: 80px auto 50px;
 }
-.foot .menu-foot {
+footer .foot .menu-foot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,7 +676,7 @@ footer {
   padding-right: 16px;
   margin: 60px;
 }
-.foot .menu-foot .data-menu-foot {
+footer .foot .menu-foot .data-menu-foot {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 600;
@@ -417,38 +686,42 @@ footer {
   padding: 10px;
   color: #FFFFFF;
 }
-.foot .menu-foot-reseau {
+footer .foot .menu-foot-reseau {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   list-style-type: none;
+  gap: 30px;
   padding-right: 16px;
 }
-.foot .menu-foot-reseau .reseau-fb {
+footer .foot .menu-foot-reseau .reseau-fb {
   background-image: url("/image/facebook.svg");
   color: transparent;
-  width: 20px;
+  width: 55px;
   height: 20px;
+  background-repeat: no-repeat;
 }
-.foot .menu-foot-reseau .reseau-ig {
+footer .foot .menu-foot-reseau .reseau-ig {
   background-image: url("/image/instagram.svg");
   color: transparent;
-  width: 20px;
+  width: 55px;
   height: 20px;
+  background-repeat: no-repeat;
 }
-.foot .menu-foot-reseau .reseau-t {
+footer .foot .menu-foot-reseau .reseau-t {
   background-image: url("/image/twitter.svg");
+  background-repeat: no-repeat;
   color: transparent;
-  width: 20px;
+  width: 55px;
   height: 17px;
 }
-.foot .menu-foot-reseau .reseau-pin {
+footer .foot .menu-foot-reseau .reseau-pin {
   background-image: url("/image/pinterest.svg");
   color: transparent;
-  width: 20px;
+  width: 55px;
   height: 20px;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */

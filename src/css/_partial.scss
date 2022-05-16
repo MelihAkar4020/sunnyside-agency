@@ -1,15 +1,18 @@
+// $height_text: variable-exists($name: );
+
 @mixin titre {
     margin-left: auto;
     margin-right: auto;
     width:445px;
-    height:98px;
-    font-family: 'Fraunces 9pt Soft';
+    height:98px; 
+    font-family: 'Fraunces', serif;
     font-style: normal;
     font-weight: 900;
     font-size: 40px;
     line-height: 49px;
     letter-spacing: -0.285714px;
     color: #24303E;
+    align-self: center;
 }
 @mixin texte{
     margin-left: auto;
@@ -30,7 +33,7 @@
     margin-left: auto;
     margin-right: auto;
     width:445px;
-    font-family: 'Fraunces 9pt Soft';
+    font-family: 'Fraunces', serif;
     font-style: normal;
     font-weight: 900;
     font-size: 15px;
@@ -39,3 +42,105 @@
     text-transform: uppercase;
     color:#24303E;
 }
+@mixin bgtext {
+    // padding-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width:339px ;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    /* or 169% */
+    text-align: center;
+    letter-spacing: -0.114286px;
+    color: #19536C;
+    }
+@mixin bgtitle {
+    font-family: 'Fraunces' ,serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: -0.2px;
+    
+}
+@mixin avis {
+    margin-top:58px ;
+    margin-bottom:69px ;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+    text-align: center;
+    letter-spacing: -0.128571px;
+    color: #5B636D;
+}
+@mixin client {
+    margin: 0;
+    font-family: 'Fraunces' serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.128571px;
+    color: #24303E;
+}
+
+@mixin travail {
+    margin:0;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    /* identical to box height, or 179% */
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #A7AAAD;
+}
+
+@mixin set_image_xl {
+    height:auto;
+    background-color: aquamarine;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+@mixin set_image_txt {
+    height:800px!important;
+    background-color: aquamarine;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+@mixin set_image_m {
+    height:1440px!important;
+    background-color: aquamarine;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin set_logo_reseau {
+    color: transparent;
+    width: 55px;
+    height: 20px;
+    background-repeat: no-repeat;
+
+}
+
+@mixin set_image_galerie{
+    height: 457.5px!important;
+
+}
+
