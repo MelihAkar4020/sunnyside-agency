@@ -135,7 +135,7 @@ header {
 }
 
 .titre {
-  font-family: "Fraunces 9pt Soft";
+  font-family: "Fraunces", serif;
   font-style: normal;
   font-weight: 900;
   font-size: 56px;
@@ -227,17 +227,6 @@ header {
   color: #24303E;
 }
 .text1 .learn-more1 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 445px;
-  font-family: "Fraunces", serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 15px;
-  line-height: 25px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #24303E;
   width: 130px;
   text-shadow: 0px 7px 6px rgba(255, 253, 53, 0.9);
 }
