@@ -59,7 +59,7 @@ header {
   /*position:absolute;*/
   width: 100vw;
   height: 800px;
-  background-image: url("/image/header-orange.png");
+  background-image: url("../../image/header-orange.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,7 +72,7 @@ header {
 }
 
 .entreprise {
-  background-image: url("/image/sunnyside.png");
+  background-image: url("../../image/sunnyside.png");
   color: transparent;
   width: 170px;
   height: 33px;
@@ -212,7 +212,7 @@ header {
 
 .img1 {
   grid-area: img1;
-  background-image: url("/image/oeuf.png");
+  background-image: url("../../image/oeuf.png");
   height: auto;
   background-color: aquamarine;
   background-position: center;
@@ -222,7 +222,7 @@ header {
 
 .img2 {
   grid-area: img2;
-  background-image: url("/image/verre-rose.png");
+  background-image: url("../../image/verre-rose.png");
   height: auto;
   background-color: aquamarine;
   background-position: center;
@@ -312,7 +312,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   text-align: justify;
-  background-image: url("/image/cerise.png");
+  background-image: url("../../image/cerise.png");
   height: 800px !important;
   background-color: aquamarine;
   background-position: center;
@@ -350,7 +350,7 @@ header {
 }
 
 .text4 {
-  background-image: url("/image/mandarine.png");
+  background-image: url("../../image/mandarine.png");
   height: 800px !important;
   background-color: aquamarine;
   background-position: center;
@@ -395,7 +395,7 @@ header {
   background-color: #FFFFFF;
 }
 .testimonial .titreclient {
-  font-family: "Fraunces 9pt Soft";
+  font-family: "Fraunces", serif;
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
@@ -533,7 +533,7 @@ header {
 
 .img5 {
   grid-area: img5;
-  background: url("/image/bouteille.png");
+  background: url("../../image/bouteille.png");
   min-height: 100%;
   height: auto;
   background-color: aquamarine;
@@ -544,7 +544,7 @@ header {
 
 .img6 {
   grid-area: img6;
-  background-image: url("/image/orange.png");
+  background-image: url("../../image/orange.png");
   height: auto;
   background-color: aquamarine;
   background-position: center;
@@ -554,7 +554,7 @@ header {
 
 .img7 {
   grid-area: img7;
-  background-image: url("/image/cornet.png");
+  background-image: url("../../image/cornet.png");
   height: auto;
   background-color: aquamarine;
   background-position: center;
@@ -564,7 +564,7 @@ header {
 
 .img8 {
   grid-area: img8;
-  background-image: url("/image/sucre.png");
+  background-image: url("../../image/sucre.png");
   height: auto;
   background-color: aquamarine;
   background-position: center;
@@ -583,7 +583,7 @@ footer .foot {
   background-color: #000000;
 }
 footer .foot .entreprise-name {
-  background-image: url("/image/sunny.svg");
+  background-image: url("../../image/sunny.svg");
   color: transparent;
   width: 170px;
   height: 33px;
@@ -616,28 +616,28 @@ footer .foot .menu-foot-reseau {
   padding-right: 16px;
 }
 footer .foot .menu-foot-reseau .reseau-fb {
-  background-image: url("/image/facebook.svg");
+  background-image: url("../../image/facebook.svg");
   color: transparent;
   width: 55px;
   height: 20px;
   background-repeat: no-repeat;
 }
 footer .foot .menu-foot-reseau .reseau-ig {
-  background-image: url("/image/instagram.svg");
+  background-image: url("../../image/instagram.svg");
   color: transparent;
   width: 55px;
   height: 20px;
   background-repeat: no-repeat;
 }
 footer .foot .menu-foot-reseau .reseau-t {
-  background-image: url("/image/twitter.svg");
+  background-image: url("../../image/twitter.svg");
   background-repeat: no-repeat;
   color: transparent;
   width: 55px;
   height: 17px;
 }
 footer .foot .menu-foot-reseau .reseau-pin {
-  background-image: url("/image/pinterest.svg");
+  background-image: url("../../image/pinterest.svg");
   color: transparent;
   width: 55px;
   height: 20px;

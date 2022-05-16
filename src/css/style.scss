@@ -34,7 +34,7 @@ header{
     /*position:absolute;*/
     width:100vw;
     height: 800px;
-    background-image: url("/image/header-orange.png");
+    background-image: url("../../image/header-orange.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,7 +49,7 @@ header{
 
 
 .entreprise{
-  background-image: url("/image/sunnyside.png");
+  background-image: url("../../image/sunnyside.png");
   color: transparent;
   width: 170px;
   height: 33px;
@@ -184,7 +184,7 @@ header{
 
 .img1 {
   grid-area: img1;
-  background-image: url("/image/oeuf.png");
+  background-image: url("../../image/oeuf.png");
   @include set_image_xl ;
 }
 
@@ -192,7 +192,7 @@ header{
 
 .img2 {
   grid-area: img2;
-  background-image: url("/image/verre-rose.png");
+  background-image: url("../../image/verre-rose.png");
   @include set_image_xl;
 
 }
@@ -241,7 +241,7 @@ header{
   justify-content: flex-end;
   align-items: center;
   text-align: justify;
-  background-image: url("/image/cerise.png");
+  background-image: url("../../image/cerise.png");
   @include set_image_txt ;
   .texte3{
   @include bgtext;
@@ -258,7 +258,7 @@ header{
 }
 
 .text4{
-  background-image: url("/image/mandarine.png");
+  background-image: url("../../image/mandarine.png");
   @include set_image_txt ;
   display: flex;
   flex-direction: column;
@@ -280,7 +280,7 @@ header{
   grid-area: Nom;
   background-color: #FFFFFF;
   .titreclient{
-    font-family: 'Fraunces 9pt Soft';
+    font-family: 'Fraunces', serif;
     font-style: normal;
     font-weight: 900;
     font-size: 20px;
@@ -344,7 +344,7 @@ header{
 
 .img5 {
   grid-area: img5;
-  background: url('/image/bouteille.png');
+  background: url('../../image/bouteille.png');
   min-height: 100%;
   @include set_image_xl;
 
@@ -352,21 +352,21 @@ header{
 
 .img6 {
   grid-area: img6;
-  background-image: url("/image/orange.png");
+  background-image: url("../../image/orange.png");
   @include set_image_xl ;
 
 }
 
 .img7 {
   grid-area: img7;
-  background-image: url("/image/cornet.png");
+  background-image: url("../../image/cornet.png");
   @include set_image_xl ;
 
 }
 
 .img8 {
   grid-area: img8;
-  background-image: url("/image/sucre.png");
+  background-image: url("../../image/sucre.png");
   @include set_image_xl ;
 
 }
@@ -390,7 +390,7 @@ justify-content: center;
   background-color: #000000;
 
     .entreprise-name{
-    background-image: url("/image/sunny.svg");
+    background-image: url("../../image/sunny.svg");
     color: transparent;
     width: 170px;
     height: 33px;
@@ -430,22 +430,22 @@ justify-content: center;
     padding-right: 16px;
 
       .reseau-fb{
-      background-image: url("/image/facebook.svg");
+      background-image: url("../../image/facebook.svg");
        @include set_logo_reseau
       }
       .reseau-ig{
-      background-image: url("/image/instagram.svg");
+      background-image: url("../../image/instagram.svg");
       @include set_logo_reseau
       }
       .reseau-t{
-      background-image: url("/image/twitter.svg");
+      background-image: url("../../image/twitter.svg");
       background-repeat: no-repeat;
       color: transparent;
       width: 55px;
       height: 17px;
       }
       .reseau-pin{
-      background-image: url("/image/pinterest.svg");
+      background-image: url("../../image/pinterest.svg");
       @include set_logo_reseau
       }
 
