@@ -344,7 +344,7 @@ header{
 
 .img5 {
   grid-area: img5;
-  background: url('../image/bouteille.png');
+  background: url('/image/bouteille.png');
   min-height: 100%;
   @include set_image_xl;
 
