@@ -307,37 +307,37 @@ header{
       height: 72px;
     }
   
-  &.emily{
+  .emily{
   @include avis;
     width:350px;
     padding-right: 30px;
     .name{
       @include client;
     }
-    &.travail{
+    .travail{
       @include travail;
     }
   }
 
-  &.thomas{
+  .thomas{
     @include avis;
     width:350px;
     .name{
       @include client;
     }
-    &.travail{
+    .travail{
       @include travail;
     }
   }
 
-  &.jennie{
+  .jennie{
     @include avis;
     width:350px;
     padding-left: 30px;
     .name{
       @include client;
     }
-    &.travail{
+    .travail{
       @include travail;
     }
   }
