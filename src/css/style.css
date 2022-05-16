@@ -395,7 +395,7 @@ header {
   background-color: #FFFFFF;
 }
 .testimonial .titreclient {
-  font-family: "Fraunces 9pt Soft";
+  font-family: "Fraunces", serif;
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
@@ -533,7 +533,8 @@ header {
 
 .img5 {
   grid-area: img5;
-  background-image: url("image/bouteille.png");
+  background-image: url("./image/bouteille.png");
+  min-height: 100%;
   height: auto;
   background-color: aquamarine;
   background-position: center;
